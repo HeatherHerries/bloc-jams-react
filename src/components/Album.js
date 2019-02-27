@@ -55,10 +55,10 @@ class Album extends Component {
 
     hoverIcon(song, index) {
         const isSameSong = this.state.currentSong === song;
-        if (this.state.isHovered === index) {
-            return <span className="icon ion-md-play" />;
-        } else if (this.state.isPlaying && isSameSong) {
+        if (this.state.isPlaying && isSameSong) {
             return <span className="icon ion-md-pause" />;
+        } else if (this.state.isHovered === song) {
+            return <span className="icon ion-md-play" />;
         } else {
             return <span className="song-number">{index + 1}</span>;
         }
@@ -91,7 +91,7 @@ class Album extends Component {
                             </tr>)}
                     </tbody>
                 </table>
-            </section>
+                </section>
         );
     }
 }
