@@ -77,12 +77,10 @@ class Album extends Component {
     }
 
     hoverIcon(song, index) {
-        const isSameSong = this.state.currentSong === song;
-        console.log(isSameSong);
-        if (this.state.isHovered === index) {
-            return <span className="icon ion-md-play" />;
-        } else if (this.state.isPlaying && isSameSong) {
+        if (this.state.currentSong === song && this.state.isPlaying ) {
             return <span className="icon ion-md-pause" />;
+        } else if (this.state.isHovered === song) {
+            return <span className="icon ion-md-play" />;
         } else {
             return <span className="song-number">{index + 1}</span>;
         }
