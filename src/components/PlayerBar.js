@@ -11,13 +11,16 @@ class PlayerBar extends Component {
                     <button id="play-pause" onClick={this.props.handleSongClick} >
                         <span className={this.props.isPlaying ? 'icon ion-md-pause' : 'icon ion-md-play'}></span>
                     </button>
-                    <button id="next">
+                    <button id="next" onClick={this.props.handleNextClick}>
                         <span className="icon ion-md-skip-forward"></span>
                     </button>
                 </section>
                 <section id="time-control">
                     <div className="current-time">-:--</div>
-                    <input type="range" className="seek-bar" value="0" />
+                    <input 
+                        type="range" 
+                        className="seek-bar" 
+                        value='0' />
                     <div className="total-time">-:--</div>
                 </section>
                 <section id="volume-control">
