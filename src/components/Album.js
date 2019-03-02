@@ -57,7 +57,11 @@ class Album extends Component {
         const isSameSong = this.state.currentSong === song;
         if (this.state.isPlaying && isSameSong) {
             return <span className="icon ion-md-pause" />;
+<<<<<<< HEAD
         } else if (this.state.isPlaying && isSameSong, this.state.isHovered) {
+=======
+        } else if (this.state.isHovered === song) {
+>>>>>>> assignment-audio-playback
             return <span className="icon ion-md-play" />;
         } else {
             return <span className="song-number">{index + 1}</span>;
