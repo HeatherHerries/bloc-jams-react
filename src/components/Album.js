@@ -54,6 +54,7 @@ class Album extends Component {
     }
 
     hoverIcon(song, index) {
+<<<<<<< HEAD
         const isSameSong = this.state.currentSong === song;
         if (this.state.isPlaying && isSameSong) {
             return <span className="icon ion-md-pause" />;
@@ -62,6 +63,11 @@ class Album extends Component {
 =======
         } else if (this.state.isHovered === song) {
 >>>>>>> assignment-audio-playback
+=======
+        if (this.state.currentSong === song && this.state.isPlaying) {
+            return <span className="icon ion-md-pause" />;
+        } else if (this.state.isHovered === index) {
+>>>>>>> assignment-player-bar-buttons
             return <span className="icon ion-md-play" />;
         } else {
             return <span className="song-number">{index + 1}</span>;
