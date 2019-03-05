@@ -1,9 +1,11 @@
 import React from 'react';
+import img from './piano-long.jpg'
 
 const Landing = () => (
     <section className="landing">
-        <h1 className="hero-title">Turn the music up!</h1>
-
+        <div className="piano">
+            <img src={img} alt="piano" />
+        </div>
         <section className="selling-points">
             <div className="point">
                 <h2 className="point-title">Choose your music</h2>
