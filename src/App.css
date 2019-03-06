@@ -1,6 +1,8 @@
+
 .App {
   text-align: center;
-  background-color: #fff6f1
+  background-color: #fff6f1;
+  margin-top: -120px;
 }
 
 
@@ -28,11 +30,160 @@
   }
 
   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: right;
     font-family: agenda,sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-right: 200px;
+    font-size: x-large;
+    padding-left: 930px;
     padding-bottom: 30px;
   }
+
+.point-title {
+  font-family: lamar-pen,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 175%;
+}
+
+.point-description {
+  font-family: agenda,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 130%;
+  padding-bottom: 50px;
+
+}
+
+.point {
+  width: 400px;
+}
+
+.selling-points {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.point h2 {
+  width: 400px;
+  border-radius: 50%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.point:nth-child(1) h2 {
+  background-color: #746b65;
+}
+
+.point:nth-child(2) h2 {
+  background-color: #a48778;
+}
+
+.point:nth-child(3) h2 {
+  background-color: #705c51;
+}
+
+nav a:active {
+ color: black;
+}
+
+nav a:hover {
+  color:#a48778;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.library {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.albumLink {
+  font-family: agenda,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  padding-top: 10px;
+}
+
+a:any-link {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #a48778;
+}
+
+.albumTitleLink {
+  font-size: xx-large;
+  padding-top: 30px;
+}
+
+.songsNumber {
+  font-size: medium;
+  padding-bottom: 10px;
+}
+
+.libraryAlbumImg {
+  height: 350px;
+  width: 350px;
+}
+
+.album{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: flex-start;
+
+}
+
+.songList {
+  padding-top: 100px;
+  text-align: left;
+  padding-right: 100px;
+  font-family: agenda,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  line-height: 35px;
+}
+
+.song-duration {
+  padding-left: 50px;
+  
+}
+
+.albumInfo {
+  padding-right: 50px;
+  padding-left: 275px;
+  font-family: agenda,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 10px;
+}
+
+#album-title {
+  font-size: xx-large;
+}
+
+#album-cover-art {
+  height: 380px;
+  width: 380px;
+}
+
+.player-bar {
+  padding-top: 138px;
+  padding-left: 50px;
+}
 
