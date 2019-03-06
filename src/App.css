@@ -187,9 +187,3 @@ a:hover {
   padding-left: 50px;
   transform: scale(2.0);
 }
-
-#volume-control {
-  font-family: agenda,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
